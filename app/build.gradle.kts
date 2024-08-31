@@ -44,7 +44,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
 
+   // implementation(project(":beauty-toast"))
+    implementation(libs.beauty.toast)
     implementation(project(":beauty-toast"))
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
