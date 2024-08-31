@@ -15,12 +15,12 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         maven(url = "https://jitpack.io")
-        jcenter() //here
+        //jcenter() //here
         google()
         mavenCentral()
     }
 }
 
 rootProject.name = "Beauty Toast"
-//include(":app")
+include(":app")
 //include(":beauty-toast")
