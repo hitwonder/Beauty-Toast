@@ -45,8 +45,8 @@ dependencies {
 
 
    // implementation(project(":beauty-toast"))
-    implementation(libs.beauty.toast)
-    implementation(project(":beauty-toast"))
+   // implementation(libs.beauty.toast)
+   // implementation(project(":beauty-toast"))
 
 
     testImplementation(libs.junit)
