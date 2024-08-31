@@ -45,11 +45,12 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("maven") {
+            from (components["release"])
             groupId = "com.github.hitwonder"
             artifactId = "beauty-toast"
             version = "1.2"
 
-            from(components.findByName("java"))
+            //from(components.findByName("java"))
         }
     }
 }
