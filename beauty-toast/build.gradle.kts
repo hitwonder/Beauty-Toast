@@ -46,13 +46,12 @@ dependencies {
 
 publishing {
     publications {
-        create<MavenPublication>("ReleaseAar") {
+        create<MavenPublication>("maven") {
             groupId = "com.github.hitwonder"
             artifactId = "beauty-toast"
-            version = "1.0.0"
-            afterEvaluate {
-                artifact(tasks.getByName("bundleReleaseAar"))
-            }
+            version = "1.2"
+
+            from(components.findByName("java"))
         }
     }
 }
